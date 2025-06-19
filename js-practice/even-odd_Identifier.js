@@ -8,7 +8,7 @@ const checker = (arr) =>
             console.log(`${num} is even`);
         }
         else{
-            console.log(`${num} is odd`);
+            console.log(`${num} is oddwww`);
         }
     }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="oi"> hello my boy</p>
+    <button id="clickMe">Click me</button>
+    <input type="text" id="Something" placeholder="Enter uh">
+    <br><br>
+    <select name="colors" id="colorpicker">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+    </select>
+    <p id="Selectedcolor"></p>
+    <script>
+       const me=document.getElementById("oi")
+       const input=document.getElementById("Something");
+        input.addEventListener("input",()=>{ 
+            me.textContent=`Hello my boy, ${input.value}`;
+            me.style.color="Green";
+         })
+        document.getElementById("clickMe").addEventListener("click",() =>{
+            console.log("Button clicked");
+        });
+        const whichcolor=document.getElementById("colorpicker")
+
+        whichcolor.addEventListener("change",()=>{
+        document.getElementById("Selectedcolor").textContent=`you selected, ${whichcolor.value}`;   
+         document.getElementById("Selectedcolor").style.color=whichcolor.value;
+        });
+        
+
+    </script>
+</body>
+</html>

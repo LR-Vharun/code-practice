@@ -24,7 +24,7 @@ const getInitials=(name) =>{
 }
 console.log( getInitials("Vharun")); */
 
-const add=function(a,b){
+/* const add=function(a,b){
     return  a+b;
 }
 console.log(add(80,65));
@@ -35,4 +35,4 @@ console.log(greetAgain("Vharun the great"));
 const power=function(base,exponent){
     return base**exponent;
 }
-console.log(power(5,2));
+console.log(power(5,2)); */
